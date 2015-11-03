@@ -1,2 +1,2 @@
-require("./stylesheet.css");
-document.write("Webpack for the win!");
+require("./stylesheet.less");
+// require("!style!css!less!./file.less");

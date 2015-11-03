@@ -16,6 +16,8 @@
     "webpack-dev-server": "^1.12.1"
   },
   "dependencies": {
+    "less": "^2.5.3",
+    "less-loader": "^2.2.1",
     "webpack": "^1.12.2"
   }
 }

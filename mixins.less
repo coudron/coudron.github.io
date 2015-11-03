@@ -1,0 +1,7 @@
+@border-radius-default: 5px;
+.border-radius (@border-radius: @border-radius-default) {
+    // If 4 values are given they denote: top left, top right, bottom right, bottom left.
+    -webkit-border-radius: @border-radius;
+    -moz-border-radius: @border-radius;
+    border-radius: @border-radius;
+}
