@@ -15,6 +15,10 @@ body {
     background-color: @light;
     color: @dark;
     padding: 100px 0;
+    @media only print {
+        font-size: 80%;
+        padding: 0;
+    }
 }
 .name {
     border-top: 1px solid @dark;
@@ -29,6 +33,12 @@ body {
     letter-spacing: 5px;
 
     .responsive(@mobile, { font-size: 20pt; });
+    @media only print {
+        font-size: 16pt;
+        max-width: 300px;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
 }
 .title {
     text-align: center;
@@ -38,24 +48,39 @@ body {
     margin-top: 6px;
     color: lighten(@dark, 10%);
     font-size: 14px;
+    @media only print {
+        font-size: 80%;
+        margin-top: 4px;
+    }
 }
 .tech {
     text-align: center;
     color: fade(@dark, 80%);
     font-size: 14px;
     margin-top: 40px;
+    @media only print {
+        font-size: 75%;
+        margin-top: 4px;
+    }
 }
 h2 {
     letter-spacing: 2px;
+
 }
 .section {
     margin-top: 80px;
+    @media only print {
+        margin-top: 20px;
+    }
 }
 .pic {
     margin: 10px auto 0;
     text-align: center;
     img {
-        max-width: 200px;
+        max-width: 140px;
+    }
+    @media only print {
+        display: none;
     }
 }
 .time {
@@ -63,6 +88,9 @@ h2 {
     font-size: 14px;
     color: lighten(@dark, 40%);
     margin: 22px 0 6px;
+    @media only print {
+        margin: 10px 0;
+    }
 }
 .company {
     font-weight: 800;
@@ -78,6 +106,9 @@ h2 {
     margin-left: 6px;
     border-left: 1px solid fade(@dark, 15%);
     color: fade(@dark, 80%);
+    @media only print {
+        font-size: 12px;
+    }
 }
 .container {
     max-width: 900px;
