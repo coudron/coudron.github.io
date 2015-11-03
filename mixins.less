@@ -5,3 +5,9 @@
     -moz-border-radius: @border-radius;
     border-radius: @border-radius;
 }
+
+.responsive(@maxWidth; @rules) {
+    @media only screen and (max-width: @maxWidth) {
+        @rules();
+    }
+}

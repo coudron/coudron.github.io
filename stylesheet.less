@@ -1,11 +1,14 @@
 @import "mixins.less";
-
 @light: #ededef;
 @dark: #323232;
-
-a:link, a:visited, a:hover, a:active {
-    color:@dark;
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: @dark;
 }
+
+@mobile: 600px;
 
 body {
     font-family: 'Raleway', sans-serif;
@@ -13,7 +16,6 @@ body {
     color: @dark;
     padding: 100px 0;
 }
-
 .name {
     border-top: 1px solid @dark;
     border-bottom: 1px solid black;
@@ -25,40 +27,34 @@ body {
     font-size: 30pt;
     text-transform: uppercase;
     letter-spacing: 5px;
-}
 
+    .responsive(@mobile, { font-size: 20pt; });
+}
 .title {
     text-align: center;
 }
-
 .contact {
     text-align: center;
     margin-top: 6px;
     color: lighten(@dark, 10%);
     font-size: 14px;
 }
-
 .tech {
     text-align: center;
     color: fade(@dark, 80%);
     font-size: 14px;
     margin-top: 40px;
 }
-
 h2 {
     letter-spacing: 2px;
 }
-
 .section {
     margin-top: 80px;
 }
-
 .pic {
     margin: 10px auto 0;
     text-align: center;
     img {
-        // .border-radius(200px);
-        // border: 1px solid @dark;
         max-width: 200px;
     }
 }
@@ -68,28 +64,24 @@ h2 {
     color: lighten(@dark, 40%);
     margin: 22px 0 6px;
 }
-
 .company {
     font-weight: 800;
 }
-
 .position {
     font-weight: 400;
     font-style: italic;
     font-size: 14px;
     margin-bottom: 6px;
 }
-
 .summary {
     padding-left: 12px;
     margin-left: 6px;
     border-left: 1px solid fade(@dark, 15%);
     color: fade(@dark, 80%);
 }
-
-
-.container{
-    // background-color: rgba(255, 0, 0, 0.4);
+.container {
     max-width: 900px;
     margin: 0 auto;
+    .responsive(1000px, { padding: 0 40px; });
+    .responsive(@mobile, { padding: 0 10px; });
 }
