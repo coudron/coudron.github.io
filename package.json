@@ -1,0 +1,21 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.21.0",
+    "file-loader": "^0.8.4",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.6",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "webpack": "^1.12.2"
+  }
+}
